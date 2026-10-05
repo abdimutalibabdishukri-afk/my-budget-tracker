@@ -1,172 +1,102 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Budget Tracker</title>
+    <title>SpendWise Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+    <div class="dashboard">
 
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                SpendWise
+            </div>
 
-<header>
-    <img
-        src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png"
-        alt="Budget Tracker Logo"
-        width="70"
-    
+            <nav class="navigation">
+                <a href="#" class="nav-item active">Dashboard</a>
+                <a href="#" class="nav-item">Expenses</a>
+                <a href="#" class="nav-item">Budget</a>
+                <a href="#" class="nav-item">Savings</a>
+                <a href="#" class="nav-item">Reports</a>
+            </nav>
+        </aside>
 
-    <h1>My Budget Tracker</h1>
-    <p>Track your expenses and manage your money.</p>
-</header>
+        <!-- Main Content -->
+        <main class="main-content">
 
-<main>
+            <!-- Header -->
+            <header class="header">
+                <div>
+                    <h1>Financial Dashboard</h1>
+                    <p>Track and manage your spending</p>
+                </div>
 
-    <section class="add-expense-section">
-        <h2>Add Expense</h2>
+                <div class="profile">
+                    <span class="profile-name">Welcome, User</span>
+                </div>
+            </header>
 
-        <form>
+            <!-- Dashboard Cards -->
+            <section class="dashboard-cards">
 
-            <label for="expense-name">Expense Name:</label>
-            <input
-                type="text"
-                id="expense-name"
-                name="expense-name"
-                placeholder="Enter expense name"
-            
+                <article class="category-card">
+                    <div>
+                        <h2>Food</h2>
+                        <p>Monthly spending</p>
+                    </div>
+                    <strong>KSh 8,500</strong>
+                </article>
 
-            <label for="expense-amount">Amount:</label>
-            <input
-                type="number"
-                id="expense-amount"
-                name="expense-amount"
-                placeholder="Enter amount"
-            
+                <article class="category-card">
+                    <div>
+                        <h2>Transport</h2>
+                        <p>Monthly spending</p>
+                    </div>
+                    <strong>KSh 4,200</strong>
+                </article>
 
-            <label for="expense-category">Category:</label>
-            <select id="expense-category" name="expense-category">
-                <option value="food">Food</option>
-                <option value="transport">Transport</option>
-                <option value="rent">Rent</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="other">Other</option>
-            </select>
+                <article class="category-card">
+                    <div>
+                        <h2>Rent</h2>
+                        <p>Monthly spending</p>
+                    </div>
+                    <strong>KSh 10,000</strong>
+                </article>
 
-            <label for="expense-date">Date:</label>
-            <input
-                type="date"
-                id="expense-date"
-                name="expense-date"
-            
+                <article class="category-card">
+                    <div>
+                        <h2>Entertainment</h2>
+                        <p>Monthly spending</p>
+                    </div>
+                    <strong>KSh 3,500</strong>
+                </article>
 
-            <button type="button">Add Expense</button>
+                <article class="category-card">
+                    <div>
+                        <h2>Savings</h2>
+                        <p>Monthly savings</p>
+                    </div>
+                    <strong>KSh 6,000</strong>
+                </article>
 
-        </form>
-    </section>
+                <article class="category-card">
+                    <div>
+                        <h2>Utilities</h2>
+                        <p>Monthly spending</p>
+                    </div>
+                    <strong>KSh 2,800</strong>
+                </article>
 
-    <section class="expenses-section">
+            </section>
 
-        <h2>My Expenses</h2>
+        </main>
 
-        <table>
-
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Amount</th>
-                    <th>Category</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>Lunch</td>
-                    <td>KSh 300</td>
-                    <td>Food</td>
-                    <td>2026-09-01</td>
-                </tr>
-
-                <tr>
-                    <td>Bus Fare</td>
-                    <td>KSh 150</td>
-                    <td>Transport</td>
-                    <td>2026-09-02</td>
-                </tr>
-
-                <tr>
-                    <td>House Rent</td>
-                    <td>KSh 10,000</td>
-                    <td>Rent</td>
-                    <td>2026-09-03</td>
-                </tr>
-
-                <tr>
-                    <td>Movie</td>
-                    <td>KSh 800</td>
-                    <td>Entertainment</td>
-                    <td>2026-09-05</td>
-                </tr>
-
-                <tr>
-                    <td>Shopping</td>
-                    <td>KSh 1,500</td>
-                    <td>Other</td>
-                    <td>2026-09-07</td>
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </section>
-
-    <section class="instructions">
-
-        <details>
-            <summary>How to use this tracker</summary>
-
-            <p>
-                Enter the expense name, amount, category and date.
-                The Add Expense button will be made functional
-                with JavaScript in a future lesson.
-            </p>
-
-        </details>
-
-    </section>
-
-    <section class="video-section">
-
-        <h2>Budgeting Tips</h2>
-
-        <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/HQzoZfc3GwQ"
-            title="Budgeting Tips Video"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-
-    </section>
-
-</main>
-
-<footer>
-    <p>© 2026 My Budget Tracker</p>
-</footer>
-
-
-</div>
+    </div>
 
 </body>
 </html>
-
-
-
